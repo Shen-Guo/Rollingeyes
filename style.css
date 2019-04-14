@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 30em;
+    align-items: center;
+    
+    
+
+}
+    
+.face{
+    width: 200px;
+    height: 200px;
+    background-color: azure;
+    border:2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.eyes{
+    display: flex;
+    justify-content: space-around;
+    
+    width:80%;
+
+
+}
+
+/* .mouth{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 15px 0 0 red;
+} */
+
+.outside-eye{                       
+    width: 50px;
+    height: 50px;
+    background-color:rgba(57, 173, 226, 0.5);
+    border:2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+}
+
+
+.inside-eye{
+    width: 10px;
+    height: 10px;
+    background-color:black;
+    border:2px solid black;
+    border-radius: 50%;
+    animation: googly 2s infinite;
+   
+}
+@keyframes googly{
+    50% {
+/*   moves pupils left and up,change number to seewhat happens     */
+   transform: translateX(-20px);
+  }
+    75% {
+      /*   moves pupils right and up,change number to seewhat happens     */
+   transform: translateY(-20px);
+      
+    }
+    
+  }
